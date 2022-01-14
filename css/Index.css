@@ -153,13 +153,10 @@ h2::before {
   @media screen and (max-width: 369px) {
     h2{
       font-size: 1.2rem;
-    
     }
-
     .subtitle{
       font-size: 1.2rem;
     }
-      
     
   }
 
@@ -167,12 +164,8 @@ h2::before {
   @media screen and (max-width: 292px) {
     h2{
       font-size: 1.1rem;
-    
     }
-
     .subtitle{
       font-size: 1.1rem;
     }
-      
-    
   }
