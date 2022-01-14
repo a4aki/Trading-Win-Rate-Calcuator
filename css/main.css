@@ -1,0 +1,265 @@
+html{
+    height: 100%;
+    background-color: #1B1C20; 
+
+}
+
+
+body{
+    height: 100%;
+    background: #1B1C20 !important; /* fallback for old browsers */ 
+    /*
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526);  */
+
+}
+
+/* welcome page */
+
+.wel{
+    color: white;
+    font-size: 10rem;
+}
+.custom{
+    color: white;
+    font-size: 5rem;
+
+}
+
+.gradGreen{
+    background-color: #378b29;
+background-image: linear-gradient(315deg, #378b29 0%, #74d680 74%);
+}
+
+.gradRed{
+    background-color: #ff7878;
+background-image: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
+
+}
+
+
+nav h1{
+    font-size: 8rem;
+    
+    color: #ff8c00;
+    font-family: 'Kolker Brush', cursive;
+}
+
+.textBoxStyle{
+    width: 100%;
+    border-radius: 25px;
+    height: 1.8rem;
+    outline: none;
+    font-size: 18px;
+}
+
+
+main h2{
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+
+
+main h4{
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.box{
+    
+    width: 17%;
+    border-radius: 26px;
+    margin: 0.5rem;
+    display: inline-block;
+    
+}
+
+
+main .badge{
+    margin: 1rem 0.5rem;
+}  
+
+
+main .badge p{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+
+.box2{
+    width: 45%;
+    border-radius: 26px;
+    margin: 0.5rem;
+    display: inline-block;
+    background-color: white;
+    
+}
+
+.box2 .textBoxStyle2{
+    width: 90%;
+    border: 2px  solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    height: 1.8rem;
+    display: block;
+    margin: 2px;
+    font-size: 24px;
+}
+
+.borderGreen{
+    border-color:greenyellow !important;
+}
+
+.borderRed{
+    border-color: rgb(243, 118, 118) !important;
+}
+
+button{
+    font-weight: bold !important;
+}
+
+
+.buttonAddText:after{
+    content: ' ADD PROFIT';
+}
+
+.buttonLossText:after{
+    content: ' ADD LOSS';
+}
+
+
+
+.summary{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    
+    main .badge p {
+        font-size: 21px !important;
+        margin-bottom: 0.2rem !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .box{
+        width: 25%;
+    }
+  }
+
+  @media screen and (max-width: 709px) {
+    nav h1{
+        font-size: 7rem;
+    }
+
+    main h2{
+        font-size: 1.3rem;
+    }
+
+    main h4{
+        font-size: 1.1rem;
+    }
+
+    .summary p{
+        font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 625px) {
+    nav h1{
+        font-size: 6rem;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 539px) {
+    nav h1{
+        font-size: 5rem;
+    }
+  }
+
+  @media screen and (max-width: 491px) {
+    .box{
+        width: 30%;
+    }
+
+    .badge button{
+        font-size: 13px;
+    }
+  }
+  @media screen and (max-width: 457px) {
+    nav h1{
+        font-size: 4rem;
+    }
+    .box2{
+        width: 42%;
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 400px) {
+    .box{
+        width: 33%;
+    }
+
+    .badge button{
+        font-size: 10px;
+    }
+    
+  }
+
+  @media screen and (max-width: 370px) {
+    
+    nav h1{
+        font-size: 3.5rem;
+    }
+
+  }
+
+
+
+
+  @media screen and (max-width: 340px) {
+    .box{
+        width: 40%;
+    }
+
+    .badge button{
+        font-size: 10px;
+    }
+
+    
+  }
+  
+
+  @media screen and (max-width: 330px) {
+    
+    nav h1{
+        font-size: 3rem;
+    }
+
+    .buttonAddText:after{
+        content: ' PROFIT';
+    }
+    
+    .buttonLossText:after{
+        content: ' LOSS';
+    }
+    
+    
+
+  }

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--css-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--js-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Press+Start+2P&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+
+   
+<script src="/js/index.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+    <title>trading Win Rate Calculator</title>
+  </head>
+  <body>
+    <nav class="container-fluid pt-2">
+        <h1 class="text-center">Winning rate Calculator</h1>
+        
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>WINRATE: <span id="winRate"></span>%</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                        <h4>Total no. of Trades: <span id="noOfTrades"></span></h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="box gradGreen">
+                        <div class="badge text-center p-2">
+                            <p>WON</p>
+                            <input type="text" id="tradeWon" class="textBoxStyle text-center" style=" color: #2dd62c;" readonly>
+                        </div>
+                    </div>
+
+                    <div class="box gradRed">
+                        <div class="badge text-center p-2">
+                            <p>LOST</p>
+                            <input type="text" id="tradeLost" class="textBoxStyle text-center" style=" color: #d62c35;" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="box2 ">
+                        <div class="badge text-center p-2 w-100">
+                            <input type="number" step="any" id="profitInput" class="textBoxStyle2 borderGreen text-center" style=" color: #2dd62c;">
+                            <button class="buttonAddText btn btn-success mt-3" onclick="addProfit()">+</button>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="box2 ">
+                        <div class="badge text-center p-2 w-100">
+                            <input type="number" step="any" id="lossInput" class="textBoxStyle2 borderRed  text-center" style=" color: #d62c35;">
+                            <button class="buttonLossText btn btn-danger mt-3" onclick="addLoss()">+ </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container mt-5 summary">
+            <div class="row text-center">
+                <div class="col-6">
+                    <p>Starting Balance : <span id="showStartBal"></span></p>
+                    <p>Current Balance  : <span id="currBalance"></span> </p>
+                    <p>Current Profit   : <span id="currProfit"></span></p>
+                </div>
+                <div class="col-6">
+                    <p>MAX WON in row  : <span id="maxWonInRow"></span></p>
+                    <p>MAX LOST in row : <span id="maxLossInRow"></span></p>
+                    <p>Highest Profit  : <span id="highestProfit"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+     <!-- Bootstrap JavaScript;-->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>

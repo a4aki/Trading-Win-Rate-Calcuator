@@ -1,0 +1,178 @@
+:root {
+    --bg-color: #1B1C20;
+    --typewriterSpeed: 2s;
+    --typewriterCharacters: 7;
+
+    --typewriterSpeed2: 10s;
+    --typewriterCharacters2: 27;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: var(--bg-color);
+    color: white;
+  }
+  
+  h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    margin: auto;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+  }
+  
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  h1::after {
+    width: 0.125em;
+    background: white;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) ;
+  }
+
+
+  
+/*h2 trail*/
+h2::after {
+  width: 0.125em;
+  background: #1B1C20;;
+  animation: typewriter var(--typewriterSpeed2)
+      steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 2s) forwards,
+    blink 750ms steps(var(--typewriterCharacters2)) infinite;
+}
+
+h2 {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  margin: auto;
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+}
+
+h2::before,
+h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h2::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed2)
+    steps(var(--typewriterCharacters2)) calc(var(--typewriterSpeed) + 2s) forwards;
+}
+  
+/*h2 trail*/
+
+  .subtitle {
+    color: rgba(226, 58, 58, 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed2) + 4s) forwards;
+  }
+
+
+  .buttonFade{
+    opacity: 0;
+    animation: fadeIn 2s ease calc(var(--typewriterSpeed2) + 6s) forwards !important;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+      background: #1B1C20;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  @keyframes fadeIn {
+    
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+ 
+
+  @media screen and (max-width: 480px) {
+    h2{
+      font-size: 1.5rem;
+    
+    }
+
+    .subtitle{
+      font-size: 1.5rem;
+    }
+      
+    
+  }
+
+
+
+  @media screen and (max-width: 369px) {
+    h2{
+      font-size: 1.2rem;
+    
+    }
+
+    .subtitle{
+      font-size: 1.2rem;
+    }
+      
+    
+  }
+
+
+  @media screen and (max-width: 292px) {
+    h2{
+      font-size: 1.1rem;
+    
+    }
+
+    .subtitle{
+      font-size: 1.1rem;
+    }
+      
+    
+  }

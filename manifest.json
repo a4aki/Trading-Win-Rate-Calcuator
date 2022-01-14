@@ -1,0 +1,64 @@
+{
+    "name": "Win Rate Calculator",
+    "short_name": "Win Rate Finder",
+    "description": "calculates the win rate pecentage made in trading",
+    "icons": [
+      {
+        "src": "icons/logo72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/logo96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "icons/logo120.png",
+        "sizes": "120x120",
+        "type": "image/png"
+      },
+        {
+        "src": "icons/logo128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+        {
+        "src": "icons/logo144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/logo152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/logo180.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/logo192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "icons/logo384.png",
+        "sizes": "384x384",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/logo512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "display": "standalone",
+    "start_url": "/index.html",
+    "background_color": "#1B1C20",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
+    "scope":"/"
+  }     
+  
